@@ -1,0 +1,209 @@
+body {
+    padding: 20px;
+    margin: 0;
+    background-color: rgba(221, 194, 42, 0.397);
+}
+
+header {
+    font-size: large;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for readability */
+    font-size: 28px;
+    text-align: center;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.protein-section h2 {
+    background-color: brown;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.protein-section img {
+    width: 100%;
+    max-width: 170px;
+    max-height: 170px;
+    gap: 4px;
+    border-radius: 10px;
+    border: 2px solid crimson;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.protein-section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carbs-section img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 170px;
+    max-height: 170px;
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 2px solid rgba(197, 81, 35, 0.77);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.carbs-section h2 {
+    background-color: rgba(197, 81, 35, 0.77);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.carbs-section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carbs-section {
+    gap: 2px;
+}
+
+.fats-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.fats-section h2 {
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(16, 220, 26, 0.848);
+}
+
+.fats-section img {
+    width: 100%;
+    max-width: 170px;
+    max-height: 170px;
+    gap: 4px;
+    border-radius: 10px;
+    border: 2px solid rgba(16, 220, 26, 0.848);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.fats-section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Task 1: Semi-transparent background div */
+.background-fade {
+    background-color: rgba(26, 47, 93, 0.6); /* Blue with semi-transparency */
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.background-fade p {
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Interactive button with hover effect */
+.interactive-button {
+    background-color: rgba(16, 150, 200, 0.8);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.interactive-button:hover {
+    background-color: rgba(16, 150, 200, 1);
+}
+
+/* Table data */
+table.background-fade {
+    padding: 1px;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    top: 300px;
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+table.background-fade th {
+    background-color: rgba(255, 87, 33, 0.9);
+    transition: background-color 0.3s ease;
+}
+
+table.background-fade th:hover {
+    background-color: rgba(179, 48, 5, 0.9);
+}
+
+table.background-fade tr {
+    background-color: rgba(26, 47, 93, 0.9);
+    transition: background-color 0.3s ease;
+}
+
+table.background-fade tr:hover {
+    background-color: rgba(50, 13, 144, 0.5);
+}
+
+table.background-fade td {
+    color: white;
+}
+/* Task 3 button with animation on click*/
+.interactive-button {
+    background-color: rgba(16, 150, 200, 0.8);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+/* Task 3 button with animation on click*/
+.interactive-button:active {
+    transform: scale(2.1); /* Slightly increases size on click */
+}
+
+/*  Task 2 rotating icon */
+.rotating-icon img {
+    right: 100px;
+    width: 50px;
+    height: 50px;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+footer {
+    background-color: rgba(26, 47, 93, 0.9);
+    border-radius: 6px;
+    text-align: center;
+    color: white;
+}
